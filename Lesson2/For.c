@@ -2,7 +2,7 @@
 //以降登場するNは100に置換する
 #define N 100
 
-int main () {
+int main (void) {
     int a, i;
 
     a = 3;

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(void) {
     int a, counter;
 
     a = 0;
@@ -30,8 +30,12 @@ int main() {
     }
 
     //無限ループ
+    //このままだと(break;をしないと)プログラムを強制終了しない限り文字列を出力し続ける
     while (1) {
         printf("No such file or directory\n");
+        //break;をすることでwhile文から強制的に抜け出すことが出来る
+        //参考資料に詳細有り
+        break;
     }
 
     return 0;
