@@ -10,11 +10,14 @@
 
 #include <stdio.h>
 
-int main() {
+int main(void) {
+    //radius:半径,volume:体積,surface:表面積
     double radius, volume, surface;
 
+    //半径を入力する処理
     printf("radius = ");
     scanf("%lf", &radius);
+
     //4.0/3.0でないとintで処理されてしまう
     volume = (4.0 / 3.0) * radius * radius * radius * 3.14;
     surface = 4 * 3.14 * radius * radius;
@@ -22,4 +25,6 @@ int main() {
     printf("volume = %.2f, surface = %.2f\n", volume, surface);
     //この条件式で判定を行う
     printf("判定結果:%d\n", (100 < volume) && (100 < surface));
+
+    return 0;
 }

@@ -1,12 +1,13 @@
 #include <stdio.h>
 
-int main() {
+int main(void) {
     //printf("出力したい文字");
     //改行をしたい場合は"\n"を入れる
-    printf("Hello\n");
+    printf("Hello\n\n");
 
     /*
     Hello
+    
     Hello
     Hello
     Hello
