@@ -1,10 +1,27 @@
 //こちらでは値渡しについて
 #include <stdio.h>
-//プロトタイプ宣言
-//この名前の関数が使われることをコンパイラに知らせるためのもの
-void function1(void);
-int function2(int n);
-int function3(int x, int y);
+
+//関数の処理 返り値 関数名(仮引数){}
+//関数の返り値を指定しない場合、voidを指定する
+//引数を指定しない場合にもvoidを指定することがある
+//Hello Worldと出力する関数
+void function1(void) {
+    printf("Hello Wolld\n\n");
+}
+
+//int型の引数として、int型を返す関数
+//引数nの2乗を返す関数
+int function2(int n) {
+    return n * n;
+}
+
+//引数は複数指定することができる
+//x * yの計算結果を返す
+int function3(int x, int y) {
+    return x * y;
+}
+
+//返り値(return)は１つしか指定することができない
 
 int main(void) {
     int a, b;
@@ -28,22 +45,12 @@ int main(void) {
     return 0;
 }
 
-//関数の処理 返り値 関数名(引数){}
-//関数の返り値を指定しない場合、voidを指定する
-//引数を指定しない場合にもvoidを指定することがある
-//Hello Worldと出力する関数
-void function1(void) {
-    printf("Hello Wolld\n\n");
-}
-
-//int型の引数として、int型を返す関数
-//引数nの2乗を返す関数
-int function2(int n) {
-    return n * n;
-}
-
-//引数は複数指定することができる
-//x * yの計算結果を返す
-int function3(int x, int y) {
-    return x * y;
-}
+/*
+    練習3-1:double型の変数 radiusを作成し、scanfを用いて値を入力できるようにする
+            入力された値を用いて球の体積と表面積を小数第2位まで求める。
+            円周率は3.14とする。
+            球の体積と表面積それぞれを計算する関数を作って実装しよう。
+            関数は２つ。出力はmainで行うようにしてみよう。
+    作成例: radius = 5(ここ入力)
+            volume = ~~~, surface area = ~~~
+*/

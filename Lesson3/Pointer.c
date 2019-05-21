@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
+    //int型のポインタpを定義
     int* p;
     int a;
     
